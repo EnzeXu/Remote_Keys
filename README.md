@@ -72,31 +72,40 @@ enze@ENZE .ssh % ssh-keygen
 Choose a file path to save
 ```shell
 Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/enze/.ssh/id_rsa): /Users/enze/.ssh/id_rsa
+Enter file in which to save the key (C:\Users\enze/.ssh/id_rsa):
 ```
 
 You may leave `passphrase` empty
 ```shell
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
-Your identification has been saved in /Users/enze/.ssh/id_rsa
-Your public key has been saved in /Users/enze/.ssh/id_rsa.pub
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\enze/.ssh/id_rsa.
+Your public key has been saved in C:\Users\enze/.ssh/id_rsa.pub.
 The key fingerprint is:
-SHA256:oPgzBj+ipULt4u8xzy2rm/7ECUy0/roo+mZ8DhmEChs enze@ENZE.dhcp.wfu.edu
+SHA256:A+VqUFHSxr8Td6+tLKogTqyJqHxsFRacEHLZrYVv7VY enze@ENZEXUD44D
 The key's randomart image is:
 +---[RSA 3072]----+
-|   .             |
-| .. .            |
-|E .o  .          |
-|o++. . .         |
-|o =+.   S        |
-| . B+ .          |
-|..*oB=           |
-|o===X=.          |
-|O**%*=o.         |
+| . +* B=o        |
+|  o. B *+        |
+|    . *.o.       |
+|     = = .oE. .  |
+|    . = S .+ . . |
+|   . o   +o     .|
+|  . = . .  .   o |
+|o. O . .    ... .|
+|=.= .   .... .o. |
 +----[SHA256]-----+
 ```
 
-~/.ssh/id_rsa.pub | ssh user@hostname "cat >> ~/.ssh/authorized_keys"
+cat ~/.ssh/id_rsa.pub | ssh user@hostname "cat >> ~/.ssh/authorized_keys"
+
+PS C:\Users\enze> ssh exu03@bg1.cs.wm.edu
+FQDN:  bg1.cs.wm.edu (128.239.2.100)
+
+If you have any problems or questions please visit http://support.cs.wm.edu
+   or email cs-support@wm.edu to open a support ticket - Thank you
+Last login: Tue Feb 13 01:22:46 2024 from 70.160.198.18
+exu03@bg1:~$
+
 
 ---
