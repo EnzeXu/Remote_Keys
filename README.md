@@ -6,7 +6,7 @@ This document is used to show the detailed description of SSH Remote Keys Tuitio
 
 # (1) Mac/Linux User
 
-Start
+Start: Launch your `Terminal` App.
 ```shell
 enze@ENZE ~ % ssh-keygen
 ```
@@ -87,7 +87,8 @@ Success!
 ---
 
 # (2) Windows User
-Start
+Start: Launch your `Windows PowerShell` App.
+
 ```shell
 PS C:\Users\enze> .ssh % ssh-keygen
 ```
