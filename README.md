@@ -40,13 +40,17 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-Locate your public SSH key
-```shell
-enze@ENZE .ssh % ls ~/.ssh/id*  
-/Users/enze/.ssh/id_rsa		/Users/enze/.ssh/id_rsa.pub
-```
+[//]: # (Locate your public SSH key)
 
-Copy it to remote server (You may need to type you log-in password here)
+[//]: # (```shell)
+
+[//]: # (enze@ENZE .ssh % ls ~/.ssh/id*  )
+
+[//]: # (/Users/enze/.ssh/id_rsa		/Users/enze/.ssh/id_rsa.pub)
+
+[//]: # (```)
+
+Copy it to remote server (You need to type you server's log-in password here)
 ```shell
 enze@ENZE .ssh % ssh-copy-id user@remote-host
 ```
@@ -96,8 +100,11 @@ The key's randomart image is:
 |=.= .   .... .o. |
 +----[SHA256]-----+
 ```
+Copy it to remote server (You need to type you server's log-in password here)
+```shell
+enze@ENZE cat ~/.ssh/id_rsa.pub | ssh user@hostname "cat >> ~/.ssh/authorized_keys"
+```
 
-cat ~/.ssh/id_rsa.pub | ssh user@hostname "cat >> ~/.ssh/authorized_keys"
 
 PS C:\Users\enze> ssh exu03@bg1.cs.wm.edu
 FQDN:  bg1.cs.wm.edu (128.239.2.100)
