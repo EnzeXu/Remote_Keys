@@ -74,6 +74,8 @@ enze@ENZE .ssh % ssh-copy-id USER@HOST_NAME
 Try to log in without key 
 ```shell
 enze@ENZE ~ % ssh exu03@bg1.cs.wm.edu
+```
+```shell
 FQDN:  bg1.cs.wm.edu (128.239.2.100)
 
 If you have any problems or questions please visit http://support.cs.wm.edu
@@ -132,6 +134,8 @@ PS C:\Users\enze> cat ~/.ssh/id_rsa.pub | ssh USER@HOST_NAME "cat >> ~/.ssh/auth
 Try to log in without key 
 ```shell
 PS C:\Users\enze> ssh exu03@bg1.cs.wm.edu
+```
+```shell
 FQDN:  bg1.cs.wm.edu (128.239.2.100)
 
 If you have any problems or questions please visit http://support.cs.wm.edu
